@@ -42,3 +42,15 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## 本地项目关联到GitHub仓库步骤
+1.首先在项目目录下初始化本地仓库git init
+2.添加所有文件( . 表示所有)git add .
+3.提交所有文件到本地仓库git commit -m "备注信息"
+4.连接到远程仓库git remote add origin 你的远程仓库地址
+5.将项目推送到远程仓库git push -u origin master
+假如报错! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/guanyingjie/jianshu.git'
+则输入git pull --rebase origin master
+再执行第五步即可
+
